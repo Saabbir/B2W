@@ -169,3 +169,12 @@ section h3 {
 #project-features {
     text-align: center;
 }
+
+/* === FEATURETTE === */
+
+#featurette {
+    text-align: center;
+    color: white;
+    background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
+    background-size: cover;
+}
