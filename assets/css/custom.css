@@ -11,14 +11,18 @@ body {
     font-size: 16px;
     font-family: 'proxima-nova', Raleway, Arial, Helvetica, sans-serif;
     background: url(../img/tile.jpg) top left repeat;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;    
 }
 
 /* === GLOBAL === */
 
 h1, h2, h3, h4, h5, h6 {
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
     font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6, p, p.lead {
+    margin: 0;
 }
 
 h1 {
@@ -57,8 +61,6 @@ img {
     min-height: 500px;
     padding: 40px 0;
     color: white;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
 }
 
 .hero-text {
@@ -109,4 +111,13 @@ img {
     display: block;
     font-weight: bold;
     color: inherit;
+}
+
+/* === OPTIN === */
+
+#optin {
+    background: #3e4249;
+    padding: 20px 0;
+    color: white;
+    font-size: 1.2em;
 }
