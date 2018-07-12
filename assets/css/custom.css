@@ -163,3 +163,9 @@ section h3 {
 .ci.ci-community        { background-position: -120px 0; }
 .ci.ci-instructor       { background-position: -160px 0; }
 .ci.ci-device           { background-position: -200px 0; }
+
+/* === PROJECT FEATURES === */
+
+#project-features {
+    text-align: center;
+}
