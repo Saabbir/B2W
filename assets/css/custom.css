@@ -21,10 +21,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
-h1, h2, h3, h4, h5, h6, p, p.lead {
-    margin: 0;
-}
-
 h1 {
     font-size: 3em;
 }
@@ -136,4 +132,10 @@ section h3 {
     padding: 20px 0;
     color: white;
     font-size: 1.2em;
+}
+
+/* === WHO BENIFITS === */
+
+#who-benefits {
+    background-color: white;
 }
