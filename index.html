@@ -98,7 +98,7 @@
                     </p>
                 </div><!-- /.col -->
                 <div class="col-sm-4">
-                    <button class="btn btn-lg btn-success btn-block" data-toggle="modal" data-target="#myModal">Send me 8 free lectures!</button>
+                    <button class="btn btn-lg btn-success btn-block" data-toggle="modal" data-target="#subscribeModal">Send me 8 free lectures!</button>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container -->
@@ -142,7 +142,36 @@
 
     <!-- MODAL
     ========================================== -->
-    <div></div>
+    <div class="modal fade" id="subscribeModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title"><i class="fa fa-envelope"></i> Subscribe to our Mailing List</h4>
+                </div><!-- /.modal-header -->
+                <div class="modal-body">
+                    <p>Simply enter your name and email. As a thank you for joining us, we're going to give you one of our best selling courses, <em>for free!</em></p>
+
+                    <form class="form-inline" role="form">
+                        <div class="form-group">
+                            <label for="subscriber-name" class="sr-only">Your first name</label>
+                            <input type="text" placeholder="Your first name" class="form-control" id="subscriber-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="subscriber-email" class="sr-only">and your email</label>
+                            <input type="text" placeholder="and your email" class="form-control" id="subscriber-email">
+                        </div>
+
+                        <input type="submit" class="btn btn-danger" value="Subscribe">
+                    </form>
+
+                    <hr>
+
+                    <p><small>By providing your email you consent to receiving occasional promotional emails &amp; newsletter. No spamm. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
+                </div><!-- /.modal-body -->
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
 
     <!-- SCRIPTS
     ========================================== -->
