@@ -178,3 +178,62 @@ section h3 {
     background: url('../img/stuff-bg.jpg') 50% 100% repeat fixed;
     background-size: cover;
 }
+
+/* === INSTRUCTOR === */
+
+#instructor {
+    background: url('../img/brad-elvis.png') 90% -10px no-repeat;
+}
+
+#instructor h2 {
+    margin: 0 0 20px;
+}
+
+a.badge.social {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin: 0 5px 20px 0;
+    background-color: #ccc;
+}
+
+a.badge.social.twitter:hover {
+    background-color: #55acee;
+}
+
+a.badge.social.facebook:hover {
+    background-color: #3b5998;
+}
+
+a.badge.social.google-plus:hover {
+    background-color: #db4b39;
+}
+
+#instructor .num {
+    width: 140px;
+    height: 140px;
+    background-color: var(--salmon);
+    border-radius: 50%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    line-height: 24px;
+    display: table;
+}
+
+#instructor .num-content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#instructor .num-content span {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+}
