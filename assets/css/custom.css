@@ -182,7 +182,7 @@ section h3 {
 /* === INSTRUCTOR === */
 
 #instructor {
-    background: url('../img/brad-elvis.png') 90% -10px no-repeat;
+    background: white url('../img/brad-elvis.png') 90% -10px no-repeat;
 }
 
 #instructor h2 {
@@ -236,4 +236,31 @@ a.badge.social.google-plus:hover {
     display: block;
     font-size: 20px;
     font-weight: normal;
+}
+
+/* === KUDOS === */
+
+#kudos {
+    text-align: center;
+}
+
+.testimonial:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+}
+
+blockquote {
+    border: none;
+    margin: 0;
+    font-style: italic;
+    text-align: left;
+}
+
+blockquote cite {
+    color: #777;
+    margin: 20px 0 0 0;
+    display: block;
 }
