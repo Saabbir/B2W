@@ -41,9 +41,22 @@ h4 {
     font-weight: bold;
 }
 
+.btn:focus {
+    outline: none !important;
+}
+
 .btn-danger {
     background-color: var(--salmon);
     border-color: #d95131;
+}
+
+.btn-success {
+    border: none;
+    background-color: #79b044;
+}
+
+.btn-success:hover {
+    background-color: #6a9b3d;
 }
 
 img {
@@ -64,6 +77,23 @@ section h3 {
 
 .section-header {
     text-align: center;
+}
+
+blockquote {
+    border: none;
+    padding: 0;
+    font-style: italic;
+    text-align: left;
+}
+
+blockquote cite {
+    color: #777;
+    margin: 15px 0 0 0;
+    display: block;
+}
+
+.modal-content {
+    background: url('../img/tile.jpg') left top repeat;
 }
 
 /* === HERO === */
@@ -252,15 +282,19 @@ a.badge.social.google-plus:hover {
     border-radius: 50%;
 }
 
-blockquote {
-    border: none;
-    margin: 0;
-    font-style: italic;
-    text-align: left;
+/* === SIGNUP === */
+
+#signup {
+    background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+    padding: 140px 0;
+    text-align: center;
+    color: white;
 }
 
-blockquote cite {
-    color: #777;
-    margin: 20px 0 0 0;
-    display: block;
+#signup h2 {
+    font-weight: normal;
+}
+
+#signup h2 strong {
+    border-bottom: 2px solid var(--salmon);
 }
