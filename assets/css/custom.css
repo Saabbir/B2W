@@ -1,40 +1,64 @@
+/* === FONT FACE === */
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/proxima-nova/light.woff');
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/proxima-nova/regular.woff');
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/proxima-nova/semi-bold.woff');
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/proxima-nova/bold.woff');
+}
+
+/* === GLOBAL === */
+
 :root {
     --green: #79b044;
     --salmon: #dd5638;
     --blue-gray: #3e4249;
 }
 
-/* === GENERAL === */
+html {
+    font-size: 18px;
+}
 
 body {
     padding-top: 50px;
-    font-size: 16px;
-    font-family: 'proxima-nova', Raleway, Arial, Helvetica, sans-serif;
-    background: url(../img/tile.jpg) top left repeat;
+    font-size: 1rem;
+    font-family: "Proxima Nova";
+    background: url('../img/tile.jpg') left top repeat;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;    
 }
 
-/* === GLOBAL === */
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 600;
 }
 
-h1 {
-    font-size: 3em;
+h1, h2, h3, h4, h5, h6, p, p.lead {
+    margin: 0;
 }
 
-h1, h2 {
-    margin: 0 0 40px;
-}
-
-h3 {
-    margin: 20px 0;
-}
-
-h4 {
-    font-size: 18px;
+p + p {
+    margin-top: 15px;
 }
 
 a:visited {
@@ -47,8 +71,10 @@ a:hover {
 }
 
 .btn {
-    font-weight: bold;
+    font-weight: 600;
     color: white;
+    min-width: 200px;
+    border: none;
 }
 
 .btn:focus {
@@ -57,7 +83,6 @@ a:hover {
 
 .btn-danger {
     background-color: var(--salmon);
-    border-color: #d95131;
 }
 
 .btn-success {
@@ -74,7 +99,7 @@ img {
 }
 
 section {
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 section h2 {
@@ -82,7 +107,7 @@ section h2 {
 }
 
 section h3 {
-    margin: 30px 0 10px;
+    margin: 30px 0 15px;
 }
 
 .section-header {
@@ -91,6 +116,7 @@ section h3 {
 
 blockquote {
     border: none;
+    margin: 0;
     padding: 0;
     font-style: italic;
     text-align: left;
@@ -104,6 +130,13 @@ blockquote cite {
 
 .modal-content {
     background: url('../img/tile.jpg') left top repeat;
+}
+
+/* === NAVBAR === */
+
+.navbar {
+    margin-bottom: 0;
+    border: none;
 }
 
 /* === HERO === */
@@ -120,19 +153,27 @@ blockquote cite {
     text-align: center;
 }
 
+.hero-text h1 {
+    margin-bottom: 10px;
+}
+
 #price-timeline {
-    margin: 30px 0 60px;
+    margin: 30px 0 65px;
     text-align: center;
 }
 
 .price {
-    display: inline-block;
-    margin: 0 2% 0 0;
-    width: 30%;
     background-color: var(--blue-gray);
-    padding: 10px 20px 30px;
+    padding: 15px 15px 35px;
     position: relative;
-    vertical-align: top;
+    border-radius: 4px;
+    max-width: 200px;
+    margin-left: auto;     
+    margin-right: auto;     
+}
+
+.price:not(:last-child) {
+    margin-bottom: 65px;
 }
 
 .price.active {
@@ -145,12 +186,12 @@ blockquote cite {
     height: 70px;
     line-height: 70px;
     border-radius: 50%;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 21px;
+    font-weight: 600;
     text-align: center;
     background-color: #101010;
     position: absolute;
-    bottom: -30px;
+    bottom: -35px;
     left: 50%;
     margin-left: -35px;
 }
@@ -161,8 +202,8 @@ blockquote cite {
 
 .price h4 small {
     display: block;
-    font-weight: bold;
-    color: inherit;
+    color: white;
+    margin-top: 5px;
 }
 
 /* === OPTIN === */
@@ -171,7 +212,10 @@ blockquote cite {
     background: #3e4249;
     padding: 20px 0;
     color: white;
-    font-size: 1.2em;
+}
+
+#optin p {
+    margin-bottom: 10px;
 }
 
 /* === WHO BENIFITS === */
@@ -186,6 +230,20 @@ blockquote cite {
     background-color: #3e4249;
     color: white;
     text-align: center;
+    padding-bottom: 30px;
+}
+
+#course-features h2,
+#course-features h4 {
+    font-weight: normal;
+}
+
+#course-features .feature {
+    margin-bottom: 30px;
+}
+
+#course-features .feature i {
+    margin-bottom: 10px;
 }
 
 /* CUSTOM ICONS SPRITES */
@@ -208,6 +266,20 @@ blockquote cite {
 
 #project-features {
     text-align: center;
+    padding-bottom: 30px;
+}
+
+#project-features .section-header {
+    margin-bottom: 40px;
+}
+
+#project-features .section-header h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#project-features .feature {
+    margin-bottom: 30px;
 }
 
 /* === FEATURETTE === */
@@ -219,10 +291,19 @@ blockquote cite {
     background-size: cover;
 }
 
+#featurette h2 {
+    margin-top: 0;
+}
+
+#featurette iframe {
+    height: 240px;
+}
+
 /* === INSTRUCTOR === */
 
 #instructor {
-    background: white url('../img/brad-elvis.png') 90% -10px no-repeat;
+    background: white url('../img/brad-elvis.png') no-repeat;
+    padding-bottom: 30px;
 }
 
 #instructor h2 {
@@ -232,7 +313,7 @@ blockquote cite {
 a.badge.social {
     width: 40px;
     height: 40px;
-    line-height: 40px;
+    line-height: 43px;
     border-radius: 50%;
     padding: 0;
     font-size: 18px;
@@ -259,12 +340,13 @@ a.badge.social.google-plus:hover {
     height: 140px;
     background-color: var(--salmon);
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 24px;
     color: white;
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 24px;
     display: table;
+    margin: 0 auto 30px;
 }
 
 #instructor .num-content {
@@ -274,7 +356,7 @@ a.badge.social.google-plus:hover {
 
 #instructor .num-content span {
     display: block;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: normal;
 }
 
@@ -282,6 +364,10 @@ a.badge.social.google-plus:hover {
 
 #kudos {
     text-align: center;
+}
+
+#kudos h2 {
+    margin-top: 0;
 }
 
 .testimonial:not(:last-child) {
@@ -296,13 +382,14 @@ a.badge.social.google-plus:hover {
 
 #signup {
     background: url('../img/hipster-stuff.jpg') center center repeat fixed;
-    padding: 140px 0;
+    padding: 60px 0;
     text-align: center;
     color: white;
 }
 
 #signup h2 {
     font-weight: normal;
+    margin-top: 0;
 }
 
 #signup h2 strong {
@@ -314,11 +401,23 @@ a.badge.social.google-plus:hover {
 footer {
     background: #3e4249;
     color: white;
-    padding: 20px 0 10px;
+    padding: 20px 0;
     font-size: 12px;
 }
 
 footer p {
+    margin: 0;
+}
+
+footer p a {
+    display: block;
+}
+
+footer nav {
+    text-align: center;
+}
+
+footer nav ul {
     margin: 0;
 }
 
@@ -332,5 +431,147 @@ footer li.signup-link a {
 }
 
 footer li.signup-link a:hover {
-    font-weight: bold;
+    font-weight: 600;
+}
+
+/* === MEDIA QUERIES === */
+
+@media (min-width: 480px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    #price-timeline {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .price {
+        flex-basis: calc(100% / 3);
+        max-width: calc(100% / 3);
+    }
+
+    .price:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }    
+}
+
+@media (min-width: 768px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .price:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    #optin p {
+        margin-bottom: 0;
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    #course-features,
+    #project-features,
+    #instructor {
+        padding-bottom: 50px;
+    }
+    
+    #featurette iframe {
+        height: 415px;
+    }
+
+    #instructor .num {
+        font-size: 30px;
+    }
+
+    #instructor .num-content span {
+        font-size: 20px;
+    }
+
+    #signup {
+        padding: 100px 0;
+    }
+}
+
+@media (min-width: 992px) {
+    #instructor {
+        background-position: right 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    #instructor {
+        background-position: 90% -10px;
+    }
+
+    #signup {
+        padding: 140px 0;
+    }    
+}
+
+@media (max-width: 1199px) {
+    #instructor {
+        background-position: right top;
+    }    
+}
+
+@media (max-width: 991px) {
+    #instructor {
+        position: relative;
+        z-index: 1;
+    }
+
+    #instructor::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255,255,255,.9);
+        z-index: -1;
+    }    
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 480px;
+    }
+
+    p.lead {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    blockquote {
+        margin-top: 20px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer nav {
+        margin-top: 10px;
+    }
+
+    footer nav ul {
+        margin: 0 0 10px 0;
+    }
+
+    footer .pull-right {
+        float: none !important;
+        text-align: center;
+    }
+}
+
+@media (max-width: 479px) {
+    #instructor {
+        background-position: left top;
+    }    
 }
