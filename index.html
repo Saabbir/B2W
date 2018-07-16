@@ -364,7 +364,7 @@
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <h2>Are you ready to take your coding skills to the <strong>next level</strong>?</h2>
-                    <p><a href="#" class="btn btn-success btn-lg btn-block">Yes, sign me up!</a></p>
+                    <p><button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#subscribeModal">Yes, sign me up!</button></p>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container -->
@@ -381,11 +381,10 @@
                 <div class="col-sm-6">
                     <nav>
                         <ul class="list-unstyled list-inline">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Resources</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li class="signup-link"><a href="#">Sign up now</a></li>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </nav>
                 </div><!-- /.col -->
@@ -408,26 +407,32 @@
                 <div class="modal-body">
                     <p>Simply enter your name and email. As a thank you for joining us, we're going to give you one of our best selling courses, <em>for free!</em></p>
 
-                    <form class="form-inline" role="form">
-                        <div class="form-group">
-                            <label for="subscriber-name" class="sr-only">Your first name</label>
-                            <input type="text" placeholder="Your first name" class="form-control" id="subscriber-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="subscriber-email" class="sr-only">and your email</label>
-                            <input type="text" placeholder="and your email" class="form-control" id="subscriber-email">
-                        </div>
-
-                        <input type="submit" class="btn btn-danger" value="Subscribe">
+                    <form class="subscribe-form" role="form">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="subscriber-name" class="sr-only">Your first name</label>
+                                    <input type="text" placeholder="Your first name" class="form-control input-lg" id="subscriber-name">
+                                </div>
+                            </div><!-- /.col -->
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="subscriber-email" class="sr-only">and your email</label>
+                                    <input type="text" placeholder="and your email" class="form-control input-lg" id="subscriber-email">
+                                </div>
+                            </div><!-- /.col -->
+                            <div class="col-sm-12">
+                                <input type="submit" class="btn btn-danger btn-block btn-lg" value="Subscribe">
+                            </div>
+                        </div><!-- /.row -->
                     </form>
-
-                    <hr>
-
-                    <p><small>By providing your email you consent to receiving occasional promotional emails &amp; newsletter. No spamm. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</small></p>
                 </div><!-- /.modal-body -->
+                <div class="modal-footer">
+                    <p>By providing your email you consent to receiving occasional promotional emails &amp; newsletter. No spamm. Just good stuff. We respect your privacy &amp; you may unsubscribe at any time.</p>
+                </div>                
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
-    </div>
+    </div><!-- /.modal -->
 
     <!-- SCRIPTS
     ========================================== -->
