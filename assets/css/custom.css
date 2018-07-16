@@ -478,13 +478,17 @@ footer li.signup-link a:hover {
 
 .post:not(:last-child),
 .widget:not(:last-child) {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .post-header, 
 .post-excerpt,
 .widget {
     padding:  20px;
+}
+
+.post-header {
+    padding-right: 90px;
 }
 
 .post-header h1,
@@ -505,7 +509,6 @@ footer li.signup-link a:hover {
 
 .post-details {
     font-size: 14px;
-    width:  90%;
 }
 
 .post-comment-badge {
@@ -700,6 +703,10 @@ footer li.signup-link a:hover {
     footer .pull-right {
         float: none !important;
         text-align: center;
+    }
+
+    #sidebar {
+        margin-top: 30px;
     }
 }
 
