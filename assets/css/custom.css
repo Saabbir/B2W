@@ -641,6 +641,16 @@ footer li.signup-link a:hover {
     margin-top: 15px;
 }
 
+/* === CONTACT === */
+
+.contact p {
+    margin-bottom: 30px;
+}
+
+.contact-form .btn {
+    margin-top: 15px;
+}
+
 /* === MEDIA QUERIES === */
 
 @media (min-width: 480px) {
