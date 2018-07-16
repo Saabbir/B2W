@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Blog | Bootstrap to WordPress</title>
+    <title>Blog Post | Bootstrap to WordPress</title>
 
     <!-- FONT-AWESOME CSS -->
     <link rel="stylesheet" href="assets/css/font-awesome/css/all.css">
@@ -47,14 +47,6 @@
         </nav><!-- /.navbar -->
     </header>
 
-    <!-- FEATURE IMAGE
-    ========================================== -->
-    <section class="feature-image feature-image-default-alt" data-type="background" data-speed="2">
-        <div class="container">
-            <h1 class="page-title">Blog</h1>
-        </div><!-- /.container -->
-    </section>
-
     <!-- BLOG MAIN
     ========================================== -->
     <section class="blog-main">
@@ -93,46 +85,86 @@
                         <div class="post-image">
                             <img src="assets/img/hero-bg.jpg" alt="Hero image">
                         </div>
-                        <div class="post-excerpt">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime soluta enim ad totam consequuntur iure, tenetur, commodi deleniti ex rerum quis ipsum dolore exercitationem debitis ... <a href="#">continue reading &raquo;</a></p>
-                        </div>
-                    </article>
-                    <article class="post">
-                        <header class="post-header">
-                            <h3><a href="#">Blog post title</a></h3>
-                            <div class="post-details">
-                                <span class="post-author">
-                                    <i class="fa fa-user"></i> Brad Hussey
-                                </span>
-                                <span class="post-time">
-                                    <i class="fa fa-clock"></i> 
-                                    <time>August 7, 2016</time>
-                                </span>
-                                <span class="post-category">
-                                     <i class="fa fa-folder-open"></i> 
-                                     <a href="#">Tutorials</a> 
-                                     <a href="#">Coding</a>
-                                </span>
-                                <span class="post-tag">
-                                    <i class="fa fa-tag"></i> Tagged: 
-                                    <a href="#">WordPress, </a>
-                                    <a href="#">Bootstrap, </a>
-                                </span>
+                        <div class="post-body">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime soluta enim ad totam consequuntur iure, tenetur, commodi deleniti ex rerum quis ipsum dolore exercitationem debitis</p>
 
-                                <div class="post-comment-badge">
-                                    <a href="#">
-                                        <i class="fa fa-comment"></i> 168
-                                    </a>
-                                </div>
-                            </div>
-                        </header>
-                        <div class="post-image">
-                            <img src="assets/img/hero-bg.jpg" alt="Hero image">
-                        </div>
-                        <div class="post-excerpt">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime soluta enim ad totam consequuntur iure, tenetur, commodi deleniti ex rerum quis ipsum dolore exercitationem debitis ... <a href="#">continue reading &raquo;</a></p>
+                            <h3>Heading level 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quibusdam architecto alias nam eum ipsa sunt fuga dolorem praesentium quam tempora ducimus soluta, repellat dolorum eius voluptatibus fugit incidunt adipisci.</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores inventore porro nostrum architecto rem, sapiente nesciunt voluptatibus reprehenderit sequi similique aliquam alias, ex autem et eum quis sunt natus. Est!</p>
+
+                            <h4>Heading level 4</h4>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem illum quibusdam id quam. Iure qui reprehenderit unde? Quia libero optio et! Sint error explicabo velit ab ut alias illum earum?</p>
                         </div>
                     </article>
+
+                    <div id="comments">
+                        <div class="comments-wrap">
+                            <h3>4 Comments</h3>
+
+                            <ol class="comments-list">
+                                <li class="comment">
+                                    <h4>Jhon Smith <small>&bull; Aug 12, 2014</small></h4>
+                                    <div class="comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odio perspiciatis sed voluptate corrupti doloribus quasi tempora ratione molestias, quas dolorum nihil vitae at, dignissimos iure. Placeat impedit tempora nihil.</p>
+                                    </div><!-- /.comment-body -->
+
+                                    <ol class="children">
+                                        <li class="comment">
+                                            <h4>Jane Smith <small>&bull; Aug 13, 2014</small></h4>
+                                            <div class="comment-body">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odio perspiciatis sed voluptate corrupti doloribus quasi tempora ratione molestias, quas dolorum nihil vitae at, dignissimos iure. Placeat impedit tempora nihil.</p>
+                                            </div><!-- /.comment-body -->
+
+                                            <ol class="children">
+                                                <li class="comment">
+                                                    <h4>Joe Root <small>&bull; Aug 14, 2014</small></h4>
+                                                    <div class="comment-body">
+                                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odio perspiciatis sed voluptate corrupti doloribus quasi tempora ratione molestias, quas dolorum nihil vitae at, dignissimos iure. Placeat impedit tempora nihil.</p>
+                                                    </div><!-- /.comment-body -->
+                                                </li><!-- /.comment -->
+                                            </ol><!-- /.children -->         
+                                        </li><!-- /.comment -->
+                                    </ol><!-- /.children -->
+                                </li><!-- /.comment -->
+                                <li class="comment">
+                                    <h4>Jane Doe <small>&bull; Aug 15, 2014</small></h4>
+
+                                    <div class="comment-body">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quaerat nostrum eos molestiae aliquam natus consequuntur animi doloremque. Incidunt sapiente ipsa aperiam assumenda aut praesentium exercitationem ea obcaecati, nam nobis!</p>
+                                    </div><!-- /.comment-body -->
+                                </li><!-- /.comment -->
+                            </ol><!-- /.comments-list -->
+
+                            <div id="leave-comment">
+                                <h3>Leave a comment</h3>
+
+                                <form action="">
+                                    <p>Your email address will not be published. Required fields are marked <span class="required">*</span></p>
+
+                                    <p>
+                                        <label for="author-name">Name *</label>
+                                        <input type="text" id="author-name" class="form-control">
+                                    </p>
+                                    <p>
+                                        <label for="author-email">Email *</label>
+                                        <input type="email" id="author-email" class="form-control">
+                                    </p>
+                                    <p>
+                                        <label for="author-website-url">Website URL</label>
+                                        <input type="url" id="author-website-url" class="form-control">
+                                    </p>
+                                    <p>
+                                        <label for="author-comment">Comment *</label>
+                                        <textarea id="author-comment" rows="5" class="form-control"></textarea>
+                                    </p>
+                                    <p>
+                                        <input type="submit" value="Submit" class="btn btn-lg btn-block btn-success">
+                                    </p>
+                                </form>
+                            </div>
+                        </div><!-- /.comments-wrap -->
+                    </div><!-- /#comments -->
                 </main><!-- /.col #content -->
                 <aside class="col-sm-5 col-md-4" id="sidebar">
                     <div class="widget">

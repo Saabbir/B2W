@@ -468,7 +468,8 @@ footer li.signup-link a:hover {
 /* === BLOG === */
 
 .post,
-.widget {
+.widget,
+#comments {
     border:  1px solid #ddd;
     background-color:  white;
     border-radius:  4px;
@@ -483,7 +484,9 @@ footer li.signup-link a:hover {
 
 .post-header, 
 .post-excerpt,
-.widget {
+.post-body,
+.widget,
+#comments .comments-wrap {
     padding:  20px;
 }
 
@@ -549,6 +552,14 @@ footer li.signup-link a:hover {
     margin-right: 5px;
 }
 
+.post-body h4 {
+    margin: 30px 0 15px;
+}
+
+.post-body p + p {
+    margin-top: 15px;
+}
+
 /* WIDGET */
 
 .widget ul {
@@ -568,6 +579,46 @@ footer li.signup-link a:hover {
 
 .widget button {
     margin-top: 15px;
+}
+
+/* COMMENTS */
+
+#comments h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+#comments .comment h4 {
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+
+#comments ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#comments ol li.comment {
+    background-color: rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+}
+
+#comments ol li.comment:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#comments ol li ol.children {
+    font-size: 0.96em;
+    margin-top: 20px;
+}
+
+#leave-comment {
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
 }
 
 /* === MEDIA QUERIES === */
