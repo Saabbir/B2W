@@ -132,6 +132,25 @@ blockquote cite {
     background: url('../img/tile.jpg') left top repeat;
 }
 
+.feature-image {
+    width: 100%;
+}
+
+.page-title {
+    text-align: center;
+    color: white;
+}
+
+.feature-image-default {
+    background: url('../img/stuff-feature.jpg') no-repeat left top fixed;
+    background-size: cover;
+}
+
+.feature-image-default-alt {
+    background: url('../img/hipster-stuff.jpg') no-repeat left top fixed;
+    background-size: cover;
+}
+
 /* === NAVBAR === */
 
 .navbar {
@@ -432,6 +451,88 @@ footer li.signup-link a {
 
 footer li.signup-link a:hover {
     font-weight: 600;
+}
+
+/* === BLOG === */
+
+.post {
+    border:  1px solid #ddd;
+    background-color:  white;
+    border-radius:  4px;
+    overflow:  hidden;
+    position:  relative;
+}
+
+.post:not(:last-child) {
+    margin-bottom: 40px;
+}
+
+.post-header, 
+.post-excerpt {
+    padding:  20px;
+}
+
+.post-header h1,
+.post-header h3 {
+    margin: 0 0 15px;
+    padding: 0 0 15px;
+    border-bottom:  1px solid #ddd;
+}
+
+.post-header h1 {
+    font-size: 24px;
+}
+
+.post-image {
+    height: auto;
+}
+
+.post-details {
+    font-size: 14px;
+    width:  90%;
+}
+
+.post-comment-badge {
+    position:  absolute;
+    top: 25px;
+    right:  20px;
+    width:  70px;
+    height:  70px;
+    text-align:  center;
+    background-color:  var(--green);
+    border-radius: 50%;
+    display:  table;
+}
+
+.post-comment-badge a {
+    color:  white;
+    display:  table-cell;
+    vertical-align: middle;
+    font-size:  22px;
+    line-height:  1;
+}
+
+.post-comment-badge a i {
+    display:  block;
+    margin-bottom:  5px;
+    font-size: 18px;
+}
+
+.post-comment-badge:hover {
+    background-color: #8bc653;
+}
+
+.post-details span:not(:last-child) {
+    margin-right:  15px;
+}
+
+.post-details span {
+    /* display:  inline-flex; */
+    /* align-items:  center; */
+}
+
+.post-details span i {
+    margin-right: 5px;
 }
 
 /* === MEDIA QUERIES === */
